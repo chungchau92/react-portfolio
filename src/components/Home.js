@@ -6,7 +6,7 @@ import TrackVisibility from "react-on-screen";
 
 export const Home = () => {
   return (
-    <section className="banner" id="home">
+    <section className="home" id="home">
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>

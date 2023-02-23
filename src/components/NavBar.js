@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 
 
 
-export const NavBar = (currentPage, handlePageChange) => {
+export const NavBar = ({currentPage, handlePageChange}) => {
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -33,7 +33,7 @@ export const NavBar = (currentPage, handlePageChange) => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link className={currentPage === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => handlePageChange('home')}>Home</Nav.Link>
-              <Nav.Link className={currentPage === 'portfolio' ? 'active navbar-link' : 'navbar-link'} onClick={() => handlePageChange('portfolio')}>Portfolio</Nav.Link>
+              <Nav.Link className={currentPage === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => handlePageChange('project')}>Projects</Nav.Link>
               <Nav.Link className={currentPage === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => handlePageChange('contact')}>Contact</Nav.Link>
               <Nav.Link className={currentPage === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => handlePageChange('resume')}>Resume</Nav.Link>
             </Nav>
