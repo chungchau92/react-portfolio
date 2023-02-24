@@ -139,6 +139,7 @@ span.navbar-text {
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
 }
 .social-icon a::before {
     content: "";
@@ -148,19 +149,31 @@ span.navbar-text {
     background-color: #ffffff;
     border-radius: 50%;
     transform: scale(0);
-	transition: 0.3s ease-in-out;
+	  transition: 0.3s ease-in-out;
 }
 .social-icon a:hover::before {
     transform: scale(1);
+    
 }
 .social-icon a img {
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
+  
 }
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+
+.social-icon a:hover svg {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+.social-icon a:hover .project-icon-heroku {
+	filter: none;
+}
+
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -241,16 +254,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/************ Banner Css ************/
-.banner {
+/************ home Css ************/
+.home {
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 90vh;
 }
-.banner .tagline {
+.home .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -260,7 +274,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 16px;
   display: inline-block;
 }
-.banner h1 {
+.home h1 {
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -268,14 +282,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
-.banner p {
+.home p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.home button {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -284,16 +298,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.banner button svg {
+.home button svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.home button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+.home img {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -313,8 +327,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 140px 0;
   position: relative;
+  background-color: black;
+  height: 90vh;
 }
 .skill-bx {
   background: #151515;
@@ -322,17 +338,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  
 }
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
-    font-size: 18px;
+    color: transparent;
+    font-size: 24px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
+    color: #c084fc;
+    
 }
 .skill-slider {
   width: 80%;
@@ -351,11 +370,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.skill-list {
+  width: 30px;
+  margin-left: 164px;
+  font-size: 20px;
+}
+
+.skill-list-item {
+  line-height: 2;
+}
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
   position: relative;
   background-color: black;
+  height: 90vh;
 }
 .project h2 {
 	font-size: 45px;
@@ -477,10 +507,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 140px 0 200px 0;
+  height: 90vh;
 }
 .contact img {
   width: 92%;
@@ -547,6 +578,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+.contact-text {
+  line-height: 3;
+  font-size: 24px;
 }
 
 /************ Footer Css ************/

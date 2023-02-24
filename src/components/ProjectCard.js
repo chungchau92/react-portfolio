@@ -20,7 +20,7 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
                 <FontAwesomeIcon icon={faGithub} className="hover:text-black hover:bg-white"></FontAwesomeIcon>
             </a>
             <a href="https://github.com/chungchau92?tab=repositories">
-                <img src={herokuImg} className="hover:bg-white">
+                <img src={herokuImg} className="project-icon-heroku">
                 </img>
             </a>
           </div>
