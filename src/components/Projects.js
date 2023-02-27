@@ -13,11 +13,15 @@ export const Projects = () => {
       title: "Tech-blog",
       description: "Experess,MYSQL",
       imgUrl: imgPj1,
+      gitUrl: "https://github.com/chungchau92/Tech-blog",
+      herokuUrl: "https://chung-demo-tech-blog.herokuapp.com/"
     },
     {
       title: "Text-editor",
       description: "Express,Webpack",
       imgUrl: imgPj2,
+      gitUrl: "https://github.com/chungchau92/text-editor",
+      herokuUrl: "https://chung-text-editor.herokuapp.com/"
     },
     
   ];
